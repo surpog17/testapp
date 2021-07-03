@@ -9,7 +9,7 @@ pipeline {
       stage('checkout') {
            steps {
              
-                git branch: 'master', url: 'http://172.16.50.211/surafel/habeshaagenagn.git'
+                git branch: 'main', url: 'https://github.com/surpog17/testapp.git'
              
           }
         }
