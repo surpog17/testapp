@@ -13,16 +13,6 @@ pipeline {
              
           }
         }
- 
-stage('Docker Build and Tag') {
-           steps {
-              
-                sh 'docker build -t testapp:latest .' 
-                sh 'docker tag testapp surafel17/testapp:latest'
-                //sh 'docker tag testapp surafel17/testapp:$BUILD_NUMBER'
-               
-          }
-        }
      
   stage('Publish image to Docker Hub') {
           
